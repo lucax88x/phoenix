@@ -1,8 +1,10 @@
 extern crate clap;
+mod phoenix;
 
 use clap::{App, Arg, SubCommand};
 
 fn main() {
+    phoenix::hello();
     let matches = App::new("Phoenix")
         .version("1.0")
         .author("Luca Trazzi <lucax88x@gmail.com>")
